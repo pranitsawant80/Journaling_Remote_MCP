@@ -163,23 +163,6 @@ This opens a browser interface where you can test tools.
 
 ---
 
-# Configure Claude Desktop
-
-Locate Claude Desktop configuration file.
-
-## Windows
-
-```text
-%APPDATA%\Claude\claude_desktop_config.json
-```
-(Note: To locate the configuration file path, open Claude Desktop and navigate to:
-Profile → Settings → Developer → Edit Config)
-## macOS
-
-```text
-~/Library/Application Support/Claude/claude_desktop_config.json
-```
-
 ---
 # Deploying to FastMCP Cloud
 
