@@ -1,0 +1,7 @@
+[project]
+name = "journaling"
+version = "0.1.0"
+description = "This is journaling mcp helps in journaling"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
