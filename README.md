@@ -181,56 +181,51 @@ Profile → Settings → Developer → Edit Config)
 ```
 
 ---
+# Deploying to FastMCP Cloud
 
-# Example Configuration
+To make your Journal Tracker MCP server accessible from Claude Desktop without running it locally, you can deploy it to FastMCP Cloud.
 
-Replace paths with your actual project location.
+## 1. Push the Project to GitHub
 
-```json
-{
-  "mcpServers": {
-    "journal-tracker": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "C:\\Users\\YourName\\journal_tracker_server",
-        "run",
-        "journal.py"
-      ]
-    }
-  }
-}
+Create a new GitHub repository and push your project code:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <repository-url>
+git push -u origin main
 ```
 
-Example for macOS/Linux:
+## 2. Deploy on FastMCP Cloud
 
-```json
-{
-  "mcpServers": {
-    "journal-tracker": {
-      "command": "uv",
-      "args": [
-        "--directory",
-        "/Users/yourname/journal_tracker_server",
-        "run",
-        "journal.py"
-      ]
-    }
-  }
-}
+1. Sign in to FastMCP Cloud.
+2. Connect your GitHub account.
+3. Grant FastMCP access to the repository containing your MCP server.
+4. Select the repository and create a new deployment.
+5. Wait for the deployment process to complete.
+6. Copy the generated deployment URL.
+
+## 3. Connect the Deployment to Claude Desktop
+
+1. Open Claude Desktop.
+2. Navigate to **Customize → Connectors**.
+3. Click **Add Connector**.
+4. Paste the FastMCP deployment URL.
+5. Save the connector configuration.
+
+Claude Desktop will now use the deployed MCP server directly from FastMCP Cloud.
+
+## 4. Verify the Connection
+
+Open a new chat in Claude Desktop and test one of the available tools, such as:
+
+```text
+Add a journal entry for today.
 ```
 
----
-
-# Restart Claude Desktop
-
-After updating the configuration:
-
-1. Close Claude Desktop
-2. Reopen Claude Desktop
-3. Open a new chat
-
-Claude should automatically detect the Journal Tracker MCP server.
+If the tool executes successfully, your FastMCP deployment has been configured correctly.
 
 ---
 
