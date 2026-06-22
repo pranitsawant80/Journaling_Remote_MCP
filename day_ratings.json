@@ -1,0 +1,29 @@
+{
+  "day_ratings": [
+    {
+      "id": 1,
+      "name": "Terrible",
+      "description": "Very difficult day"
+    },
+    {
+      "id": 2,
+      "name": "Bad",
+      "description": "More negative than positive"
+    },
+    {
+      "id": 3,
+      "name": "Average",
+      "description": "Normal day"
+    },
+    {
+      "id": 4,
+      "name": "Good",
+      "description": "Mostly positive day"
+    },
+    {
+      "id": 5,
+      "name": "Excellent",
+      "description": "Outstanding day"
+    }
+  ]
+}
