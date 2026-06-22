@@ -107,7 +107,7 @@ uv sync
 (Note: UV automatically manages the virtual environment. You do not need to manually activate `.venv` when using `uv run`)
 
 ```bash
-uv add fastmcp
+uv add fastmcp aiosqlite
 ```
 
 ---
